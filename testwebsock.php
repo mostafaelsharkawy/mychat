@@ -15,8 +15,9 @@ class echoServer extends WebSocketServer {
     // However, if we did care about the users, we would probably have a cookie to
     // parse at this step, would be looking them up in permanent storage, etc.
   
-      
+      echo "someone connected";
       $this->send($user, "welcome to my server");
+      
   }
   
   protected function closed ($user) {
